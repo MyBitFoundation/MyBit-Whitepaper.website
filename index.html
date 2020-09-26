@@ -574,25 +574,26 @@
               <h3 class="mb-0">2.2.4 The Investment and Distribution Process</h3>
               <div class="subheading mb-3"></div>
               <p>So how does the investment and distribution process work? After an Asset Manager
-                launches an asset and it is approved by the MyBit review team, the asset is listed for investors. The asset is now open for investment. The investment period is limited to a
+                lists an asset on the platform, it is immediately open for investment. The investment period is limited to a
                 specific period of time, currently thirty days. If the investment target is not reached by
-                the end of the period, contributed funds are automatically transferred back to investors
-                via the Ethereum smart contract which governs the process. </p>
+                the end of the period, contributed funds are able to be transferred back to investors
+                via the Ethereum smart contract which governs the process. Investors just need to initiate a transaction to receive their funds back 
+                from the smart contract. </p>
               <p>If the investment goal is reached before the investment period ends, the asset is closed
-                to additional investors and the funds are automatically transferred to the partner (in this
-                scenario, an IoT company). They work with the Asset Manager to deliver, install and otherwise make the asset fully functional in a defined location. </p>
+                to additional investors and the funds are ready to be withdrawn by the Asset Manager (or the IoT partner, depending on who 
+                created the listing). The Asset Manager is the responsible for arranging delivery, installation and any other requirements for making the asset fully functional. </p>
               <p>Once the asset is operating and generating revenue, the Asset Manager takes on the responsibility of maintaining it. Because they’re rewarded based on a percentage of the
-                asset’s revenue (rather than a fixed rate), it’s in their best interests to complete their duties to the highest level possible. When an asset is successfully generating revenue, the
+                asset’s revenue (rather than a fixed rate), it’s in their best interest to complete their duties to the highest level possible. When an asset is successfully generating revenue, the
                 profits are automatically distributed to all investors based on their ownership stake.</p>
               <p>It should be noted that all operating costs, insurance, etc. are outlined during the investment process and will either be priced into the asset cost or deducted as a % of revenue. </p>
               <p><b>An example:</b></p>
               <p>In this example, the asset is a small co-working space in Zürich which is automated by
                 using Slock.it.</p>
               <ol>
-                <li>An Asset Manager lists the asset on MyBit Go. It costs $25,000 to set up and
+                <li>An Asset Manager lists the asset on MyBit. It costs $25,000 to set up and
                   cover the first three months of the lease. It has monthly operating costs including
                   rent payments of $5,000. Furniture is included and all repairs are covered by the
-                  property owner in full. It has capacity for 20 people and charges $500 per person
+                  property owner in full. It has capacity for 20 people and charges $500 per person,
                   per month. It’s in a great location and occupancy rates are expected to exceed
                   80%. Since almost everything is automated and the Asset Manager will only need
                   to attract customers, they ask for 3% of net revenue. All of the documents including lease agreements, insurance, contracts, etc. are visible to investors.</li>
@@ -728,7 +729,7 @@
               <div class="subheading mb-3"></div>
               <p>If there is a need to list an asset which already exists outside of the MyBit Network,
                 through our asset-based SDK, it is easy for anyone to take an existing asset and register
-                it on the blockchain. This could be real estate, art, cars or expensive jewellery. If the asset generates revenue or is predicted to appreciate in value then it is a viable asset for
+                it on the blockchain. This could be real estate, art, cars or expensive jewelry. If the asset generates revenue or is predicted to appreciate in value, then it is a viable asset for
                 listing on MYDAX. For example, someone owns a piece of art worth $100,000 that has
                 been appreciating 10% per annum, but has a cash flow issue which requires $50,000.
                 They would normally need to sell the piece of art.</p>
@@ -860,46 +861,11 @@
                 JavaScript class Network.js, and User Interface (UI) Kit-, MyBit v2.0, the global alternative
                 investment platform for Internet of Things (IoT) devices, and a series of Micro Decentralised Applications (Microdapps) -Trust, Will, DropZone, Options, Payroll Fork, and Bill
                 Splitting- to showcase the power of the MyBit Network. </p>
-              <p>In order to assist us in the development of these products, the MyBit Foundation has
-                created the Decentralised Development Fund (DDF), a framework for funding development tasks specific to the development of our products. </p>
-            </div>
+             </div>
           </div>
 
           <div class="paper-item d-flex flex-column flex-md-row mb-5">
             <div class="paper-content mr-auto">
-              <h3 class="mb-0">3.1 Decentralised Development Fund (DDF)</h3>
-              <div class="subheading mb-3"></div>
-              <p>A Decentralised Development Fund (DDF) is an investment fund that is tied to the development of a specific product within a company, allowing stakeholders to track and review their investments.</p>
-              <p class="mb-0">MyBit has implemented their own DDF by expanding the functionality of the <a href="https://openbounty.status.im/">Open Bounty</a> project, adding an interaction layer focused in MyBit projects to set up "bounties",
-                which are monetary rewards in the form of company MYB tokens. </p>
-              <p>These bounties are setup as Smart Contracts with two owners defined by a <a href="https://github.com/status-im/open-bounty/tree/develop/contracts">MultiSigFactory contract</a>. These Smart Contracts function as escrows for the rewards, and the owners as co-signers of any transfer operation within the contract. Within Open Bounty, one
-                owner is an automated bot that detects requests for creating the bounties, and the second owner is a MyBit Coordinator, an individual responsible of reviewing, managing and
-                approving bounties within  the DDF. </p>
-              <p class="mb-0">In short, the process goes as follows: a Development Investment is made against a specific topic within the MyBit Foundation (currently MyBit has allocated $100,000.00 worth
-                in MYB in the <a href="https://etherscan.io/address/0x7601387f7bc11f0ec554fe8d068af725781f004d">2018 Development Fund</a>). These funds then are forwarded towards a specific series of Development Categories such as Development, Design and Marketing. </p>
-              <p>Each of these categories have then isolated bounties that can receive MYB tokens in escrow for developers, designers and community contributors to cash in exchange of their
-                work. More of this process can be read in the <a href="https://status.im/docs/">Open Bounty Wiki page</a>.</p>
-              <p>These bounties are created after a MyBit Coordinator creates an labeled issue within our
-                Task Manager. After the labeled issues are created, the Open Bounty Bot (a <a href="https://github.com/status-open-bounty">Github Bot
-                  account</a> that integrates a <a href="https://github.com/apps/status-open-bounty-app">Github App</a> that synchronizes with Github issues across the
-                entire <a href="https://github.com/MyBitFoundation">MyBit Foundation Organization</a>), create an instance of the previously described
-                Smart Contracts in Mainnet. These contracts are linked to a MyBit Coordinator account,
-                and require its signature to release any funds stored in them. </p>
-              <p class="mb-0">Bounties can be funded by anyone, but only MyBit Coordinators can release the funds
-                within them. In order to get approved by the MyBit Coordinator, any contributor must
-                submit a proof-of-development (PoD) in the form of a Pull Request within the allocated
-                Github Repository that has the linked issue and bounty. This PoD is then reviewed, and
-                merged to the codebase of the MyBit Foundation. </p>
-              <p>
-                By structuring our development to the DDF, the MyBit Foundation can function as a fully
-                automated company that increases its intrinsic value by allowing community members
-                the possibility of expanding the Foundation's products, while getting rewarded in their
-                tokens while doing so. As projects scale and increase in scope and value, the Foundation becomes a self-sustainable ecosystem powered by the MYB token.
-              </p>
-              <p>As of the time of writing, the MyBit DDF can be seen at its <a href="https://ddf.mybit.io/">website</a>, relying solely in the
-                Open Bounty project. However, in the future, the MyBit DDF will be integrated into other
-                projects like the Bounties Network ecosystem, and popular development platforms like
-                Gitcoin. </p>
               <p>
                 <img src="img/whitepaper/3-1.png" class="img-fluid" alt="">
               </p>
